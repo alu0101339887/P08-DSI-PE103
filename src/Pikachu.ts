@@ -1,5 +1,8 @@
 import { Pokemon } from "./Pokemon";
 
+/**
+ * Clase Pikachu. Almacenará la información del pokemon Pikachu
+ */
 export class Pikachu extends Pokemon {
   constructor(nombre: string, 
               nivel: number, 
