@@ -1,6 +1,9 @@
 {
   "entryPoints": [
-    "src"
+    "./src/Pikachu.ts",
+    "./src/Pokemon.ts",
+    "./src/PokemonCreator.ts",
+    "./src/PikachuCreator.ts"
   ],
   "out": "./docs"
 }
