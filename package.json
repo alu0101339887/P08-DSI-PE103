@@ -7,6 +7,7 @@
     "test": "mocha",
     "coverage": "nyc npm test",
     "coverage_": "nyc npm test && nyc report --reporter=lcov",
+    "cover": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output",
     "start": "tsc-watch --onSuccess 'node dist/*.js'",
     "doc": "typedoc",
     "make": "node ./dist/*.js"
@@ -18,7 +19,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": { 
+  "bugs": {
     "url": "https://github.com/alu0101339887/P08-DSI-PE103/issues"
   },
   "homepage": "https://github.com/alu0101339887/P08-DSI-PE103#readme",
@@ -36,6 +37,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "coveralls": "^3.1.1",
     "nyc": "^15.1.0",
     "typedoc": "^0.22.13"
   }
