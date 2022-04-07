@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "[![Tests](https://github.com/alu0101339887/P08-DSI-PE103/actions/workflows/node.js.yml/badge.svg)](https://github.com/alu0101339887/P08-DSI-PE103/actions/workflows/node.js.yml)",
   "main": "index.js",
-  "scripts": {"test": "mocha",
+  "scripts": {
+    "test": "mocha",
     "coverage": "nyc npm test",
     "coverage_": "nyc npm test && nyc report --reporter=lcov",
     "start": "tsc-watch --onSuccess 'node dist/*.js'",
@@ -35,6 +36,7 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "nyc": "^15.1.0",
     "typedoc": "^0.22.13"
   }
 }
