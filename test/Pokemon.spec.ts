@@ -32,5 +32,5 @@ describe('Tests de la clase Pokemon', () => {
     expect(pokemon.getDamage).to.exist;
     expect(pokemon.getDamage).to.be.a('function');
     expect(pokemon.getDamage()).to.equal(10000);
-  });
+  }); 
 });
