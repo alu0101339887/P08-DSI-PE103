@@ -31,6 +31,6 @@ describe('Tests de la clase Pokemon', () => {
   it ('Debería devolver el daño que causa el pokémon', () => {
     expect(pokemon.getDamage).to.exist;
     expect(pokemon.getDamage).to.be.a('function');
-    expect(pokemon.getDamage()).to.equal(100);
+    expect(pokemon.getDamage()).to.equal(10000);
   });
 });
