@@ -33,4 +33,10 @@ describe('Tests de la clase Pikachu', () => {
     expect(pikachu.getAtaqueEspecial).to.be.a('function');
     expect(pikachu.getAtaqueEspecial()).to.equal(150);
   });
+  it ('Debería devolver el que causa el pokémon', () => {
+    expect(pikachu.getDamage).to.exist;
+    expect(pikachu.getDamage).to.be.a('function');
+    expect(pikachu.getDamage()).to.equal(10150);
+  });
+
 });
